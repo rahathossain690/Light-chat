@@ -1,0 +1,65 @@
+<title>Light Chat</title>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<body style="font-size: 15px;" bgcolor="#2d2d2d">
+	<div class="head">
+		<h5>LIGHT-CHAT</h5>
+	</div><br>
+	<div class="box" align="center">
+	<div class = "hide" Id="main" style="position: absolute;top:0; background-color: #2d2f2f">
+		<table width="450px;" >
+			<tr>
+				<td colspan="2" width="80%"></td>
+				<td width="" align="center"><button onclick=" logOut() ">Log Out</button></td>
+			</tr>
+			<tr>
+				<td colspan="3" height="420px;" align="left">
+					<div style="width: 98%;height: 100%;overflow: auto;padding: 5px 5px;background-color: #5A5A5A" Id="text" align="left">
+					</div>
+				</td>
+			</tr>
+			<tr style="padding: 2px 2px;">
+				<td colspan="2" height="50px;"><textarea style="width: 100%;height: 100%;" placeholder="Write Message Here" Id="msg"></textarea></td>
+				<td align="center"><button onclick = " send() ">Send</button></td>
+			</tr>
+		</table>
+	</div>
+	<div class="first" Id="first">
+		What Do you want to do?<br><br><br>
+		<button onclick = " firstPageSignIn() ">Sign In</button> <br><br>
+		<button onclick = " firstPageSignUp() ">Sign Up</button> 
+	</div>
+	<div class = "signup hide" Id="signup">
+		Sign Up<br>Fill the following fields. <br><br><br>
+		Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type = "text" Id="signupemail"/><br><br>
+		Password : <input type = "password" Id="signuppassword"/><br><br>
+		Confirm<br>
+		Password : <input type = "password" Id="confirm"/><br><br>
+		<button onclick="signUp()">Sign Up</button><button onclick=" back() ">Back</button><br><br>
+		<p style="color:red;" Id="errorUp"></p>
+	</div>
+	<div class = "login hide" Id="login">
+		Sign In.<br><br>
+		Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 
+		<input type="text" Id="signinemail"/>
+		<br><br>
+		Password : <input type="password" Id="signinpassword"/>
+		<br><br><br>
+		<button onclick=" signIn() " >Log In</button><button onclick=" back() ">Back</button><br><br>
+		<p style="color:red;" Id="errorIn"></p>
+	</div>	
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyDgq-uaNqQpnnM7_eqsvH7QR8VudQjXt-Q",
+    authDomain: "fir-efa5b.firebaseapp.com",
+    databaseURL: "https://fir-efa5b.firebaseio.com",
+    projectId: "fir-efa5b",
+    storageBucket: "fir-efa5b.appspot.com",
+    messagingSenderId: "396743328974"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="light-chat.js"></script>
+<link rel="stylesheet" type="text/css" href="light-chat.css">
+</body>

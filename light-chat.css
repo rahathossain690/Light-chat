@@ -1,0 +1,58 @@
+table{
+	border-collapse: collapse;
+}
+.box{
+	width: 450px;
+	height: 500px;
+	border : 2px dotted white;
+	text-align: left;
+	position: relative;
+}
+.head{
+	width: 450px;
+	height: 50px;
+	color: white;
+	text-align: center;
+	border: 3px dotted white;
+}
+.hide{
+	visibility: hidden;
+}
+.login{
+	padding: 10px 10px;
+	color: white;
+	position: absolute;
+	top: 0;
+}
+.first{
+	position: absolute;
+	top : 0;
+	padding: 10px 10px;
+	color : white;
+}
+.message{
+	width: 95%;
+	max-width: 95%;
+	color: white;
+	background-color: #8D8D8D;
+	border-radius: 10px;
+	padding: 2px 2px;
+}
+.hayre{
+	max-width: 95%;
+	display: inline;
+}
+.messageMe{
+	width: 95%;
+	max-width: 95%;
+	color: black;
+	background-color: #E4E4E4;
+	border-radius: 10px;
+	padding: 2px 2px;
+}
+.signup{
+	position: absolute;
+	top: 0;
+	color: white;
+	padding: 10px 10px;
+}
